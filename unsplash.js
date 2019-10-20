@@ -5,8 +5,9 @@ fetch('https://api.unsplash.com/collections/'+ collection_id + '/photos/?client_
   .then((resp) => resp.json()) // Transform the data into json
   .then(function(data) {
   	console.log(data);
-  	var row = 1;
   	//console.log(data.length);
+
+  	// write image grid HTML into DOM 
   	for (var i=0; i<data.length; i++) {
   		if (i%3 == 0) {
   			document.getElementsByClassName('container')[1].innerHTML +=
