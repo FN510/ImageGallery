@@ -1,5 +1,6 @@
 body {
 	padding-top: 70px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .jumbotron {
@@ -19,4 +20,21 @@ body {
 .row {
 	display: flex; 
 	flex-wrap: wrap
+}
+.cat {
+	height: 100px;
+	width: 300px;
+	background-color: rgba(100, 100, 255, 0.5);
+	margin: 5px 0 5px 0;
+	display: inline-block;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(128,131,195,0.3); 
+box-shadow: 5px 5px 15px 5px rgba(128,131,195,0.3);
+	font-size: 50px;
+	text-align: center;
+}
+.gallery {
+	font-family: 'Architects Daughter', cursive;
+	height: auto;
+	width: auto;
 }
