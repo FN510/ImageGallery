@@ -9,7 +9,7 @@ fetch('https://api.unsplash.com/collections/'+ collection_id + '/photos/?client_
   	// write image grid HTML into DOM
   	for (var i=0; i<data.length; i++) {
   		document.getElementsByClassName('row')[0].innerHTML +=
-       `<div class="col-lg-4 col-sm-6"><div class="thumbnail"><img src= `+data[i].urls.small + `>`;  	
+       `<div class="col-lg-4 col-sm-6"><div class="thumbnail"><a  target="_blank" href=` + data[i].links.html + `><img src= `+data[i].urls.small + `></a>`;  	
   	}
     })
   		
